@@ -1,0 +1,27 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import BlogList from './components/BlogList';
+import BlogPost from './components/BlogPost';
+import posts from './components/posts.json'; // Αποθηκεύουμε τα άρθρα σε JSON
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<BlogList posts={posts} />} />
+            <Route path="/post/:id" element={<BlogPost posts={posts} />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;
