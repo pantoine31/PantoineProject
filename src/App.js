@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import BlogList from './components/BlogList';
 import BlogPost from './components/BlogPost';
-import posts from './components/posts.json'; // Αποθηκεύουμε τα άρθρα σε JSON
+import posts from './components/posts.json'; // save articles into posts.json
 
 function App() {
   return (
