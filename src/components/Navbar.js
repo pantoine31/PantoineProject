@@ -18,6 +18,9 @@ const Navbar = () => {
               <Link className="nav-link" to="/about">Σχετικά με Εμένα</Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/proff">Επαγγελματικό Προφίλ</Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/contact">Επικοινωνία</Link>
             </li>
           </ul>

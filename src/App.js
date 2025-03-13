@@ -5,6 +5,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import BlogList from './components/BlogList';
 import BlogPost from './components/BlogPost';
+import Contact from './pages/Contact';
+import About from './pages/About';
+
 import posts from './components/posts.json'; // save articles into posts.json
 
 function App() {
@@ -16,6 +19,9 @@ function App() {
           <Routes>
             <Route path="/" element={<BlogList posts={posts} />} />
             <Route path="/post/:id" element={<BlogPost posts={posts} />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+
           </Routes>
         </main>
         <Footer />
